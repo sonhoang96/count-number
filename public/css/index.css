@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.frame {
+    perspective-origin: bottom;
+    transform: perspective(400px) rotateX(0deg) rotateY(-40deg);
+    animation: rotation 2s ease forwards;
+}
+
+button.__buttons-click {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #a9453e;
+    border-radius: 50%;
+    margin: 0.5em;
+    box-shadow: 0px 0px 10px #000000;
+    background: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    outline: none;
+}
+
+button.__buttons-click.__buttons-clicked {
+    box-shadow: 0px 0px 0px #5c5d5c;
+}
+
+.buttons {
+    width: inherit;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.__frame-number-display {
+    font-size: 10em;
+    font-weight: 400;
+    color: #a9453e;
+}
+
+.__frame-number {
+    width: inherit;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    clip-path: circle(100% at 50% -10%);
+}
+
+@-webkit-keyframes rotation {
+	0%{
+		transform: perspective(400px) rotateX(0deg) rotateY(-50deg);
+	}
+	50%{
+		transform: perspective(400px) rotateX(0deg) rotateY(50deg);
+	}
+	100%{
+		transform: perspective(400px) rotateX(0deg) rotateY(0deg);
+	}
+}

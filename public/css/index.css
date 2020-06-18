@@ -5,8 +5,6 @@
 }
 
 .frame {
-    perspective-origin: bottom;
-    transform: perspective(400px) rotateX(0deg) rotateY(-40deg);
     animation: rotation 2s ease forwards;
 }
 
@@ -53,12 +51,12 @@ h1.__frame-number-display {
 
 @-webkit-keyframes rotation {
 	0%{
-		transform: perspective(400px) rotateX(0deg) rotateY(-50deg);
+		transform: perspective(400px) rotateY(-200deg);
 	}
 	50%{
-		transform: perspective(400px) rotateX(0deg) rotateY(50deg);
+		transform: perspective(400px) rotateY(50deg);
 	}
 	100%{
-		transform: perspective(400px) rotateX(0deg) rotateY(0deg);
+		transform: perspective(400px) rotateY(0deg);
 	}
 }

@@ -38,6 +38,7 @@ class RenderApp extends Component {
 		})
 	}
 	componentDidMount(){
+		//add more event click after mounting component
 		const buttons = document.querySelectorAll('.__buttons-click');
 		buttons.forEach((btn) => btn.addEventListener('click', function(event){
 			setTimeout(() => {

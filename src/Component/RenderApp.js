@@ -46,7 +46,7 @@ class RenderApp extends Component {
 			}, 0)
 			setTimeout(() => {
 				this.classList.remove('__buttons-clicked');
-			}, 200)
+			}, 100)
 		}));
 	}
 
